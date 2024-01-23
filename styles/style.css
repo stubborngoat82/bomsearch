@@ -1,0 +1,156 @@
+body {
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    text-align: center;
+    background-color: #eae6d5;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.banner {
+    padding: 20px;
+}
+
+.logo {
+    max-width: 150px;
+    height: auto;
+}
+
+nav {
+    background-color: #333;
+}
+
+nav ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ddd;
+}
+
+/* Apply styles to the form and its children */
+#scriptureSearchForm {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: auto;
+}
+
+/* Style the label and select elements */
+label {
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+select {
+    padding: 8px;
+    margin-bottom: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #eae6d5;
+}
+
+/* Style the section containing scripture text */
+.scriptureText {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    padding: 10px;
+    background-color: #eae6d5;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Optional: Style the disabled select elements differently */
+select:disabled {
+    background-color: #f4f4f4; /* Change to a color of your choice */
+    color: #666; /* Change to a color of your choice */
+    cursor: not-allowed;
+}
+
+hr {
+    width: 90%;
+    border-bottom: 3px solid #ccc; /* Change the color and style as needed */
+}
+
+footer {
+    margin-top: 50px;
+    text-align: center;
+    border-top: 1px solid #e7e7e7;
+}
+
+button {
+    background-color: #333;
+    color: #fff; /* Change the color of the text */
+    padding: 10px 20px; /* Adjust padding as needed */
+    border: none;
+    cursor: pointer;
+    margin-right: 10px; /* Add some spacing between buttons */
+}
+
+button:hover {
+    background-color: #555; /* Change the color when hovered */
+}
+
+/* Add styles for the scripture cards */
+.card {
+    width: 100%;
+    max-width: 400px; /* Adjust the maximum width as needed */
+    margin-bottom: 20px; /* Add some spacing between cards */
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #e7e7e7;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left; /* Align text to the left within cards */
+}
+
+.card p {
+    margin: 0; /* Reset margin for paragraphs inside the card */
+}
+
+.card strong {
+    color: #007bff; /* Change the color of the strong text */
+}
+
+/* Adjustments to existing styles */
+main {
+    align-items: flex-start; /* Align cards to the start of the flex container */
+}
+
+/* Optional: Adjust spacing and margins for better card layout */
+@media (min-width: 768px) {
+    .card {
+        max-width: 300px; /* Adjust the maximum width for larger screens */
+        margin-right: 20px; /* Add some spacing between cards on larger screens */
+    }
+
+    /* Adjustments to other elements for larger screens if needed */
+}
